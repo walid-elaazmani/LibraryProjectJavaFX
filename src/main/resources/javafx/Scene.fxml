@@ -7,15 +7,15 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.SceneController">
    <children>
-      <Button fx:id="loginbutton" layoutX="491.0" layoutY="220.0" mnemonicParsing="false" onAction="#logIn" style="-fx-border-color: blue;" text="LogIn">
+      <Button fx:id="loginbutton" layoutX="494.0" layoutY="241.0" mnemonicParsing="false" onAction="#logIn" style="-fx-border-color: blue;" text="LogIn">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button fx:id="registerbutton" layoutX="27.0" layoutY="220.0" mnemonicParsing="false" onAction="#register" style="-fx-border-color: red;" text="Register">
+      <Button fx:id="registerbutton" layoutX="27.0" layoutY="241.0" mnemonicParsing="false" onAction="#register" style="-fx-border-color: red;" text="Register">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <ImageView fx:id="matrix" fitHeight="315.0" fitWidth="331.0" layoutX="160.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="matrix" fitHeight="315.0" fitWidth="331.0" layoutX="136.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
