@@ -35,9 +35,10 @@ public class TransactionService {
 
         double fineForBooks = 0;
         for (BorrowedBook borrowedBook : bookToList) {
-            if (DAYS.between(borrowedBook.getDateOfReturn(), LocalDate.now())>30){
+            if (DAYS.between(borrowedBook.getDateOfReturn(), LocalDate.now())>30 && borrowedBook.getBook().getStatus() == Status.UNAVAILABLE){
                 fineForBooks += (DAYS.between(borrowedBook.getDateOfReturn(), LocalDate.now()) * 0.20);
-                System.out.println("You have a fine of: " + DAYS.between(borrowedBook.getDateOfReturn(), LocalDate.now()) * 0.20 + "€" + " for: " + borrowedBook.getBook().getTitle());
+                System.out.println("You have a fine of: " + DAYS.between(borrowedBook.getDateOfReturn(),
+                        LocalDate.now()) * 0.20 + "€" + " for: " + borrowedBook.getBook().getTitle());
             }
         }
         return fineForBooks;

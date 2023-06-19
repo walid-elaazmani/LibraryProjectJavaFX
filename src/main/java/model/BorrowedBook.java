@@ -26,7 +26,7 @@ public class BorrowedBook {
         this.book = book;
         this.user = user;
         this.dateIssued = LocalDate.now();
-        this.dateOfReturn = LocalDate.now().plusDays(100);
+        this.dateOfReturn = LocalDate.now().plusDays(7);
         this.fine = 0;
     }
 
